@@ -1,0 +1,67 @@
+:root {
+    --color1: #FFE085; /*Jasmine*/
+    --color2: #9E4C00; /*Windsor Tan*/
+    --color3: #24513E; /*Brunswick Green*/
+    --color4: #BEF4D1; /*Magic Mint*/
+    --color5: #8BC5F9; /*Maya Blue*/
+    --color6: #05478A; /*Yale Blue*/
+}
+
+body {
+    background: rgb(255,224,133);
+    background: linear-gradient(0deg, rgba(255,224,133,1) 60%, rgba(139,197,249,1) 95%);
+    font-family: roboto, monospace;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    color: var(--color3);
+    font-weight: 500;
+}
+
+#title {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#tribute-info {
+    text-align: center;}
+
+p {
+    margin-left: 40px;
+    text-align: justify;
+    text-justify: auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    border-style: solid;
+    margin-bottom: 8px;
+    border-width: 2px;
+    border-color:#BEF4D1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+figcaption{
+    font-style: italic;
+}
+
+a {
+    color: var(--color6);
+}
+
+a:hover {
+    color: var(--color2);
+}
+
+ul {
+    list-style-type: none;
+    text-align: justify;
+    text-justify: auto;
+}
+
+li {
+    line-height: 1.5em;
+}
