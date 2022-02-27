@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Survey form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="centralArea">
+            <header>
+                <h1 id="title" class="textCenter">Food quality survey</h1>
+                <p id="description" class="description textCenter">Please help us understand where we can improve</p>
+            </header>
+            <main>
+                <form id="survey-form">
+                    <div class="questionsGroup">
+                        <label id="name-label" for="name">Name 
+                            <input id="name" name="name" type="text" class="formNames" placeholder="What's your name?" required></label>
+                    </div>
+                    <div class="questionsGroup">
+                        <label id="email-label" for="email">E-mail 
+                            <input id="email" name="email" type="email" class="formNames" placeholder="What's your best e-mail?" required></label>
+                    </div>
+                    <div class="questionsGroup">
+                        <label id="number-label" for="number">Age<span class="hint">(optional)</span>
+                            <input id="number" name="age" type="number" max="99" min="18" class="formNames" placeholder="Age?"></label>
+                    </div>
+                    <div class="questionsGroup">
+                        <p>Which option is your favorite type of cuisine?</p>
+                        <select name="cuisine" id="dropdown" class="formNames">
+                            <option disabled selected value>Please choose an option</option>
+                            <option value="italian">Italian</option>
+                            <option value="japanese">Japanese</option>
+                            <option value="chinese">Chinese</option>
+                            <option value="indian">Indian</option>
+                            <option value="vietnamese">Vietnamese</option>
+                            <option value="brazilian">Brazilian</option>
+                        </select>
+                    </div>
+                    <div class="questionsGroup">
+                        <p>Which is your favorite meal of the day?</p>
+                        <label>
+                            <input name="favorite-meal" value="breakfast" type="radio" class="input-radio" checked/>Breakfast</label>
+                        <label>
+                            <input name="favorite-meal" value="lunch" type="radio" class="input-radio">Lunch</label>
+                        <label>
+                            <input name="favorite-meal" value="afternoon snack" type="radio" class="input-radio">Afternoon snack</label>
+                        <label>
+                            <input name="favorite-meal" value="dinner" type="radio" class="input-radio">Dinner</label>
+                    </div>
+                    
+                    <div class="questionsGroup">
+                        <p>Do you have any food allergies?
+                            <span class="hint">(Please mark all that apply to you)</span>
+                        </p>
+                        <label><input name="allergies" id="peanut" value="peanut" type="checkbox" class="input-ckeckbox">Peanut</label>
+                        <label><input name="allergies" id="seafood" value="seafood" type="checkbox" class="input-ckeckbox">Seafood</label>
+                        <label><input name="allergies" id="gluten" value="gluten" type="checkbox"class="input-ckeckbox">Gluten</label>
+                        <label><input name="allergies" id="milk" value="milk" type="checkbox" class="input-ckeckbox">Milk</label>
+                        <label><input name="allergies" id="egg" value="egg" type="checkbox" class="input-ckeckbox">Egg</label>
+                        <label><input name="allergies" id="soy" value="soy" type="checkbox" class="input-ckeckbox">Soy</label>
+                        <label><input name="allergies" id="others" value="other" type="checkbox" class="input-ckeckbox">Others
+                            <span class="hint">(Please specify in the comments box bellow)</span></label>
+                    </div>
+
+                    <div class="questionsGroup">
+                        <p>Feel free to write us some comments or suggestions bellow.</p>
+                        <textarea id="suggestions" name="suggestions" placeholder="Write your suggestions or comments here."></textarea>
+                    </div>
+                    <div class="questionsGroup">
+                        <button id="submit" type="submit">Submit</button><br>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </body>
+</html>
+
+<!--Project page on Free Code Camp: https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form
+    Project page created on codepen for the course: https://codepen.io/fratoni-mateus/pen/ZEaqWBx-->

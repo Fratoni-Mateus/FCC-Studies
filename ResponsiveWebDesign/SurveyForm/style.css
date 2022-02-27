@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;500&display=swap');
+
+body {
+    margin: auto;
+    text-align: center;
+    max-width: 800px;
+    font-family: 'League Spartan', sans-serif;
+    background: url(https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    line-height: 1.6em;
+}
+
+h1 {
+    padding-top: 1em;
+}
+
+#centralArea {
+    background-color: #faebd7B0;
+    border-radius: 0.5em;
+}
+
+.hint {
+    color:blueviolet;
+}
