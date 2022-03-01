@@ -8,7 +8,7 @@
     --columbiaBlue: #B9D9EB;
     --champagne: #F8E4C9;
     --antiqueWhite: #FAEBD7;
-    --antiqueWhiteAlpha: #FAEBD7B0;
+    --antiqueWhiteAlpha: #FAEBD760;
     --floralWhite: #FDF6ED;
     --crimsonUA: #9D1B2E;
     --princetonOrange: #F58025;
@@ -28,7 +28,9 @@ body {
     line-height: 1.6em;
     color: var(--royalBlueDark);
     margin: 0;
+    background: inherit;
 }
+
 
 body::before {
     content: '';
@@ -120,6 +122,7 @@ form {
     background: var(--antiqueWhiteAlpha);
     padding: 2.5rem 0.625rem;
     border-radius: 0.25rem;
+    backdrop-filter: blur(4px);
 }
 
 @media (min-width: 480px) {
