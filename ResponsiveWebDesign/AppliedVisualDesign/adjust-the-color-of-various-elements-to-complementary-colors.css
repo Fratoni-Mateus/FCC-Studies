@@ -1,0 +1,23 @@
+:root{
+--primary-color: #09A7A1;
+--secondary-color: #FF790E;
+}
+body {
+background-color: white;
+}
+header {
+background-color: var(--primary-color);
+color: white;
+padding: 0.25em;
+}
+h2 {
+color: var(--primary-color);
+}
+button {
+background-color: var(--secondary-color);
+}
+footer {
+background-color: var(--primary-color);
+color: white;
+padding: 0.5em;
+}
