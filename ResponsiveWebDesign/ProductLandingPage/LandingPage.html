@@ -7,12 +7,14 @@
         <title>Landing page</title>
     </head>
     <body>
-        <header>
+        <header id="header">
             <h1>Le Good Knife</h1>
-            <img src="logo.png" alt="Logo">
-            <h2>Who we are</h2>
-            <h2>Manufacture</h2>
-            <h2>Order now</h2>
+            <img id="header-img" class="logo" src="logo.png" alt="Logo">
+            <nav id="nav-bar">
+                <h2><a href="#material" class="nav-link">Material & quality</h2></a>
+                <h2><a href="#maitenance" class="nav-link">Maitenance</h2></a>
+                <h2><a href="#order" class="nav-link">Order now</h2></a>
+            </nav>
         </header>
         <main>
             <div class="email">
@@ -20,7 +22,7 @@
                     <input type="email" placeholder="Enter your e-mail adress">
                 </form>
             </div>
-            <div class="video">
+            <div id="video" class="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/t-_qzsMF8RM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </main>
