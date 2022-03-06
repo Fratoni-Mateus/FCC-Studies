@@ -7,26 +7,160 @@
         <title>Landing page</title>
     </head>
     <body>
-        <header id="header">
-            <h1>Le Good Knife</h1>
-            <img id="header-img" class="logo" src="logo.png" alt="Logo">
-            <nav id="nav-bar">
-                <h2><a href="#material" class="nav-link">Material & quality</h2></a>
-                <h2><a href="#maitenance" class="nav-link">Maitenance</h2></a>
-                <h2><a href="#order" class="nav-link">Order now</h2></a>
-            </nav>
-        </header>
-        <main>
-            <div class="email">
-                <form>
-                    <input type="email" placeholder="Enter your e-mail adress">
-                </form>
+        <div id="page-wraper">
+            <header id="header">
+                <div id="logo">
+                    <img id="header-img" class="logo" src="logo.png" alt="Le Good Knife Logo">
+                    <h1>Le Good Knife</h1>
+                </div>
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a class="nav-link" href="#material">Material & quality</a></li>
+                        <li><a class="nav-link" href="#maitenance">Maitenance</a></li>
+                        <li><a class="nav-link" href="#order">Order now</a></li>
+                        <li><a class="nav-link" href="#footer">Additional info</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <section id="newsletter">
+                <div class="email">
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <h3>If you'd like to subscribe to our newletter and receive offers in your e-mail please subscribe bello</h3>
+                        <input id="email" name="email" type="email"  placeholder="Enter your e-mail adress" required>
+                        <input id="submit" type="submit" value="Submit" class="button" />
+                    </form>
+                </div>
+            </section>
+
+            <div class="container">
+                <section id="material">
+                    <div class="grid" id="containerMaterial">
+                        <div class="icon">
+                            <img id="material-logo" src="textile.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h2>No corrosion! </h2>
+                            <p>Our knives are made with stainless steel 440C which is suitable for culinary use and have a high resistance against corrosion.</p>
+                        </div>
+                    </div>
+                    <div class="grid" id="containerSharp">
+                        <div class="icon">
+                            <img id="sharp-logo" src="sharp-knife.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h2>Stay sharp!</h2>
+                            <p> We employ a hardening process in all our cutlery, which ensures that you will be able to cut effortlesly without having to worry about a dull knife.</p>
+                        </div>
+                    </div>
+                    <div class="grid" id="containerWarranty">
+                        <div class="icon">
+                            <img id="warranty-logo" src="warranty.png" alt="">
+                        </div>
+                        <div class="description">
+                            <h2>Lifetime warranty!</h2>
+                            <p>Don't worry, if something ever happens to you utensils just reach out to us, we will be glad to be of assistance and repair them for you.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <secion id="maitenance" class="video">
+                    <div class="description">
+                        <h2>Maintaining your knife</h2>
+                        <p>To ensure the cutting power of your knives are maintained for a long time you must follow some basic care instructions, for example:</p>
+                        <ul>
+                            <li>Always use it in a plastic or wooden cutting board, never use in on top of glass, stone or other hard surfaces, as it damages your knife;</li>
+                            <li>You should use a honing rod frequently, whenerver you feel that your knife is not cutting like it used to. Pass it a couple of times on the rod a couple of times. </li>
+                            <li>If after you honed it you still need to aply pressure in order make the cut it's time to sharpen your knife. We recommend using a sharpening stone or whetstone for that.</li>
+                        </ul> </p>
+                        <h2>Check out this video to understand how to use, care and maintain your knives.</h2>
+                    </div>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/t-_qzsMF8RM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <caption>Copyright: Epicurious</caption>
+                </secion>
+                
+                <section id="order">
+                    <h2>Check our special launching kits and order now!</h2>
+                    <div class="product" id="starter">
+                        <div class="productHeading">
+                            <h2>Starter kit</h2>
+                        </div>
+                        <div class="productPrice">
+                            <h2><s>$200</s><br>$99</h2>
+                        </div>
+                        <div class="productDescription">
+                            <ul>
+                                <li>1 chef knife</li>
+                                <li>1 honing rod</li>
+                                <li>1 pair of tongs</li>
+                                <li>Lifetime warranty</li>
+                            </ul>
+                            <button class="button">Order</button>
+                        </div>
+                    </div>
+                    <div class="product" id="value">
+                        <div class="productHeading">
+                            <h2>Value kit</h2>
+                        </div>
+                        <div class="productPrice">
+                            <h2><s>$400</s><br>$199</h2>
+                        </div>
+                        <div class="productDescription">
+                            <ul>
+                                <li>1 chef knife</li>
+                                <li>1 honing rod</li>
+                                <li>1 paring knife</li>
+                                <li>1 kitchen shears</li>
+                                <li>1 bread knife</li>
+                                <li>1 knife block</li>
+                                <li>1 pair of tongs</li>
+                                <li>Lifetime warranty</li>
+                            </ul>
+                            <button class="button">Order</button>
+                        </div>
+                    </div>
+                    <div class="product" id="professional">
+                        <div class="productHeading">
+                            <h2>Professional kit</h2>
+                        </div>
+                        <div class="productPrice">
+                            <h2><s>$1000</s><br>$299</h2>
+                        </div>
+                        <div class="productDescription">
+                            <ul>
+                                <li>1 chef knife</li>
+                                <li>1 honing rod</li>
+                                <li>1 paring knife</li>
+                                <li>1 kitchen shears</li>
+                                <li>1 bread knife</li>
+                                <li>1 serrated utility knife</li>
+                                <li>1 utility knife</li>
+                                <li>1 boning knife</li>
+                                <li>1 santoku knife</li>
+                                <li>1 carving knife</li>
+                                <li>8 steak knives</li>
+                                <li>1 self sharpening block</li>
+                                <li>1 pair of tongs</li>
+                                <li>Lifetime warranty</li>
+                            </ul>
+                            <button class="button">Order</button>
+                        </div>
+                    </div>
+                </section>
+                <footer id="footer">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <!--Create a dropdown for the credits-->
+                    <h3>Credits</h4>
+                    <a href="https://www.flaticon.com/free-icons/food-and-restaurant" title="food and restaurant icons">Food and restaurant icons created by shmai - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/textile" title="textile icons">Textile icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/sharp" title="sharp icons">Sharp icons created by Smashicons - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/warranty" title="warranty icons">Warranty icons created by SBTS2018 - Flaticon</a>
+                </footer>
             </div>
-            <div id="video" class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/t-_qzsMF8RM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </main>
+        </div>
     </body>
 </html>
-
-<!--https://www.youtube.com/watch?v=t-_qzsMF8RM-->
