@@ -393,6 +393,25 @@ form {
     margin: 20px auto;
 }
 
+#order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#productsDisplay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 10px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    justify-content: space-around;
+}
+
 footer {
     background-color: var(--footerBackgroundColor);
     color: var(--footerColor);
