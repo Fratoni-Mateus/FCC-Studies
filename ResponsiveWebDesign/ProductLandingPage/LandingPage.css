@@ -30,6 +30,10 @@ body{
     font-family: 'Courier Prime', 'Courier New', Courier, monospace;
 }
 
+input[type='submit'],
+button {
+    font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+}
 #page-wrapper{
     position: relative;
     align-self: center;
@@ -491,6 +495,8 @@ footer {
     background-color: var(--footerBackgroundColor);
     color: var(--footerColor);
     margin-top: 15px;
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
