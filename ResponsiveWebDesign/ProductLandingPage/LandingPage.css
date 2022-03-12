@@ -32,25 +32,28 @@ body{
 
 #page-wrapper{
     position: relative;
+    align-self: center;
     width: 100%;
     margin: 0 auto;
 }
 
-@media (min-width: 393px) {
+@media (max-width: 393px) {
     #page-wrapper {
-        max-width: 351px
+        max-width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
 @media (min-width: 412px) {
     #page-wrapper {
-        max-width: 387px
+        max-width: 387px;
     }
 }
 
 @media (min-width: 576px) {
     #page-wrapper {
-        max-width: 540px
+        max-width: 540px;
     }
 }
 
@@ -75,9 +78,14 @@ a{
     color:var(--textColor);
     text-decoration: none;
 }
+@media (max-width: 393px) {
+    h2{
+        font-weight: 600;
+        font-size: 1.15rem;
+    }
+}
 
 /* Global classes styling */
-
 .button {
     padding: 0 20px;
     height: 40px;
@@ -98,7 +106,6 @@ header {
     top: 0;
     min-height: 75px;
     width: 100%;
-    height: 50px;
     padding: 0 20px;
     display: flex;
     justify-content: space-evenly;
@@ -192,6 +199,7 @@ nav {
 @media (max-width: 700px) {
     nav {
         margin-top: 10px;
+        margin-bottom: 10px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -247,25 +255,7 @@ nav > ul > li {
 
 @media (max-width: 700px) {
     #newsletter {
-        margin-top: 210px;
-    }
-}
-
-@media (max-width: 288px) {
-    #newsletter {
-        margin-top: 232px;
-    }
-}
-
-@media (max-width: 280px) {
-    #newsletter {
-        margin-top: 280px;
-    }
-}
-
-@media (max-width: 576px) {
-    body {
-        max-width:540px;
+        padding-top: 200px;
     }
 }
 
@@ -326,8 +316,8 @@ form {
     #material::before {
         content:"";
         display: block;
-        height: 190px;
-        margin: -190px 0 0;
+        height: 200px;
+        margin: -200px 0 0;
     }
 }
 
@@ -367,13 +357,14 @@ form {
     height: 125px;
     width: 80vw;
     padding: 5px;
-    padding-bottom: 0;
+    padding-bottom: 1px;
 }
 
 @media (max-width: 576px) {
     #material .description {
         width: 100%;
         text-align: center;
+        justify-content: space-evenly;
         padding: 0;
         height: 150px;
     }
@@ -382,10 +373,18 @@ form {
 #maitenance {
     margin-top: -50px;
     padding-top: 70px;
+    padding-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+@media (max-width: 700px) {
+    #maitenance {
+        margin-top: -180px;
+        padding-top: 200px;
+    }
 }
 
 #maitenance > .description {
@@ -425,6 +424,13 @@ form {
     text-align: center;
 }
 
+@media (max-width: 700px) {
+    #order {
+        margin-top: -180px;
+        padding-top: 200px;
+    }
+}
+
 #productsDisplay {
     margin-top: 15px;
     display: grid;
@@ -433,20 +439,13 @@ form {
     width: 100%;
 }
 
-#productsDisplay button {
-    background-color: var(--button);
-}
-
-#productsDisplay button:hover {
-    background-color: var(--buttonHover);
-    transition: background-color 1s;
-}
-
 .product {
     border: 2px solid var(--border);
     border-radius: 0.5rem;
     padding: 0.25rem;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .product ul {
@@ -473,18 +472,25 @@ form {
     flex-direction: column;
 }
 
-.button {
-    margin: 0.25rem;
+.product .productDescription{
+    flex: 1 1 auto;
+}
+
+#productsDisplay button {
+    background-color: var(--button);
     border-radius: 0.5rem;
+    width: 100%;
+}
+
+#productsDisplay button:hover {
+    background-color: var(--buttonHover);
+    transition: background-color 1s;
 }
 
 footer {
     background-color: var(--footerBackgroundColor);
     color: var(--footerColor);
     margin-top: 15px;
-    /*display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 10px;*/
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -498,9 +504,6 @@ footer {
 footer ul {
     display: flex;
     flex-direction: row;
-    /*display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 10px;*/
 }
 
 footer a {
@@ -514,7 +517,7 @@ footer a {
 .dropButton {
     background-color: var(--footerBackgroundColor);
     color: var(--footerColor);
-    padding: 16px;
+    padding: 16px 2px 16px 0;
     font-size: 16px;
     border: none;
     font-weight: 600;
@@ -530,7 +533,8 @@ footer a {
     display: none;
     position: absolute;
     background-color: var(--footerBackgroundColor);
-    min-width: 160px;
+    width: auto;
+    min-width:500px;
     max-width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -543,6 +547,32 @@ footer a {
 .dropdown:hover .dropdownContent {
     display: flex;
     flex-direction: column;
+    right: 0;
+}
+
+
+@media (max-width: 412px) {
+    .dropdownContent {
+        min-width: 300px
+    }
+}
+
+@media (min-width: 576px) {
+    .dropdownContent {
+        min-width: 490px
+    }
+    .dropdown:hover .dropdownContent{
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 768px) {
+    .dropdownContent {
+        min-width: 480px;
+    }
+    .dropdown:hover .dropdownContent{
+        flex-wrap: wrap;
+    }
 }
 
 .dropdown:hover .dropButton {
