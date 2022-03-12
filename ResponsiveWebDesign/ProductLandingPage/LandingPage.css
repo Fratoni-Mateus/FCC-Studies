@@ -10,6 +10,7 @@
     --focusBorder: #B1740F;
     --focusShadow: #D3A15F;
     --button: #CCFF33;
+    --secondaryGreen: #adff2f;
     --buttonHover: #F5f500;
     --shadowColor: #CFCFCF;
     --footerBackgroundColor: #7C8A8A;
@@ -445,12 +446,18 @@ form {
     padding: 0.25rem;
     margin-bottom: 1rem;
 }
+.productHeading {
+    background-color: var(--secondaryGreen);
+}
 
 .productHeading,
 .productPrice {
-    background-color: var(--headerBackgroundColor);
     border: 2px solid var(--border);
     border-radius: 0.25rem;
+}
+
+.productPrice{
+    background-color: var(--headerBackgroundColor);
 }
 
 .productDescription {
