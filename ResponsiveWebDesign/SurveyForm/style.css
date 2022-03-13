@@ -41,7 +41,7 @@ body::before {
     width: 100%;
     z-index: -1;
     background: rgb(250,235,215);
-    background: linear-gradient(0deg, rgba(250,235,215,0.3) 65%, rgba(245,128,37,0.4) 85%), url(https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=600&w=1008);
+    background: linear-gradient(0deg, rgba(250,235,215,0.1) 65%, rgba(245,128,37,0.1) 85%), url(https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=600&w=1008);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
