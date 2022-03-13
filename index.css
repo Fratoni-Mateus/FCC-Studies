@@ -1,0 +1,92 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Global elements styling */
+:root {
+    --textColor: #000000;
+    --linkColor: #50ad6f;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 32pt;
+    line-height: 1.2;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.15rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    margin-top: 0;
+    line-height: 1;
+}
+
+a{
+    color: var(--linkColor);
+    text-decoration: none;
+}
+
+
+/* Global classes styling*/
+#pageWrapper {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+    #pageWrapper {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    #pageWrapper {
+        max-width: 720px;
+    }
+}
+
+#header {
+    margin-bottom: 2rem;
+}
+
+#title {
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
+
+#subtitle {
+    text-align: justify;
+}
+
+.topic {
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+}
+
+.projectTitle{
+    line-height: 0.5;
+}
+
+.linkDescription{
+    font-style: italic;
+    text-align: justify;
+}
