@@ -12,8 +12,8 @@
             Programming languages
         </header>
             <ul>
-                <li><a class="nav-link" href="#section_number_1">section_number_1</a></li>
-                <li><a class="nav-link" href="#section_number_2">section_number_2</a></li>
+                <li><a class="nav-link" href="#section_number_1">Programming languages overview</a></li>
+                <li><a class="nav-link" href="#section_number_2">C programming language</a></li>
                 <li><a class="nav-link" href="#section_number_3">section_number_3</a></li>
                 <li><a class="nav-link" href="#section_number_4">section_number_4</a></li>
                 <li><a class="nav-link" href="#section_number_5">section_number_5</a></li>
@@ -22,30 +22,44 @@
     <main id="main-doc">
         <section id="section_number_1" class="main-section">
             <header>
-                section_number_1
+                Programming languages overview
             </header>
             <article>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.In elementis mé pra quem é amistosis quis leo.Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.In elementis mé pra quem é amistosis quis leo.Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p>
-                <ul>
-                    <li>Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</li>
-                    <li>Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</li>
-                    <li>Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</li>
-                    <li>Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</li>
-                    <li>Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</li>
-                </ul>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.In elementis mé pra quem é amistosis quis leo.Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p>
+                <p>The aim of this page is to give a brief overview of some commonly used programming langues: C, Java, Javascript, Python and PHP.</p>
             </article>
         </section>
         <section id="section_number_2" class="main-section">
             <header>
-                section_number_2
+                C programming language
             </header>
             <article>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.In elementis mé pra quem é amistosis quis leo.Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p>
-                <code>console.log(Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.)</code>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.In elementis mé pra quem é amistosis quis leo.Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p>
-                <code>console.log(Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.)</code>
+                <p>The C programming language is an imperative procedural language which was designed to be compiled to provide low-level access to memory and to provide an efficient language for instructing machines. Even though it's a low-level language, it was developed to stimulate cross-platform programming.</p>
+                <p>C is widely used for systems programming in implementing operating systems and embedded system applications. It's sometimes used as an intermediate language by implementations of other languages to take advantage of the portability and convenience of the C language characteristics.</p>
+                <ul>
+                    <li>Data typing is static but weakly enforced;</li>
+                    <li>Function return values can be ignored when not needed;</li>
+                    <li>Low-level computer memory access is possible;</li>
+                </ul>
+                <p>An example of the C programming language structure can be seen bellow. The first is a "Hello world", while the second shows the allocation of a two-dimensional array on the heap and the use of multi-dimensional array indexing for accesses.</p>
+                <code><xmp>#include <stdio.h>
+
+int main(void)
+{
+    printf("hello, world\n");
+}</xmp></code>
+                <code><xmp>int func(int N, int M)
+{
+    float (*p)[N][M] = malloc(sizeof *p);
+    if (!p)
+    return -1;
+    for (int i = 0; i < N; i++)
+    for (int j = 0; j < M; j++)
+        (*p)[i][j] = i + j;
+    print_array(N, M, p);
+    free(p);
+    return 1;
+}</xmp></code>
+                <p>C has been widely used for implementing end-user applications, however, they can also be written in newer, higher level languages.</p>
             </article>
         </section>
         <section id="section_number_3" class="main-section">
