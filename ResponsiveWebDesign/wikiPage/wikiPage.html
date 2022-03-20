@@ -14,7 +14,7 @@
             <ul>
                 <li><a class="nav-link" href="#section_number_1">Programming languages overview</a></li>
                 <li><a class="nav-link" href="#section_number_2">C programming language</a></li>
-                <li><a class="nav-link" href="#section_number_3">section_number_3</a></li>
+                <li><a class="nav-link" href="#section_number_3">PHP</a></li>
                 <li><a class="nav-link" href="#section_number_4">section_number_4</a></li>
                 <li><a class="nav-link" href="#section_number_5">section_number_5</a></li>
             </ul>
@@ -64,11 +64,33 @@ int main(void)
         </section>
         <section id="section_number_3" class="main-section">
             <header>
-                section_number_3
+                PHP
             </header>
             <article>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.In elementis mé pra quem é amistosis quis leo.Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p>
-                <code>console.log(Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.)</code>
+                <p>P is a general-purpose scripting language geared towards web development     that is especially suited to server-side web development, in which case PHP generally runs on a web server. Originally designed to create dynamic web pages, PHP now focuses mainly on server-side scripting.</p>
+                <p>You can see an example of PHP programming bellow:</p>
+                <code><xmp><!DOCTYPE html>
+<html>
+    <head>
+        <title>PHP "Hello, World!" program</title>
+    </head>
+    <body>
+        <?php
+            echo '<p>Hello, World!</p>';
+        ?>
+    </body>
+</html></xmp></code>
+<code><xmp>function myAge(int $birthYear): string
+{
+    // calculate the age by subtracting the birth year from the current year.
+    $yearsOld = date('Y') - $birthYear;
+
+    // return the age in a descriptive string.
+    return $yearsOld . ' year' . ($yearsOld != 1 ? 's':'');
+}
+
+echo 'I am currently ' . myAge(1995) . ' old.';</xmp></code>
+                <p>The standard PHP evolved without a written formal specification or standard until 2014. W3Techs reports that, as of January 2022, "PHP is used by 78.1% of all the websites whose server-side programming language we know. </p>
             </article>
         </section>
         <section id="section_number_4" class="main-section">
