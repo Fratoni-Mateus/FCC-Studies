@@ -15,7 +15,7 @@
                 <li><a class="nav-link" href="#section_number_1">Programming languages overview</a></li>
                 <li><a class="nav-link" href="#section_number_2">C programming language</a></li>
                 <li><a class="nav-link" href="#section_number_3">PHP</a></li>
-                <li><a class="nav-link" href="#section_number_4">section_number_4</a></li>
+                <li><a class="nav-link" href="#section_number_4">Java</a></li>
                 <li><a class="nav-link" href="#section_number_5">section_number_5</a></li>
             </ul>
     </nav>
@@ -95,14 +95,75 @@ echo 'I am currently ' . myAge(1995) . ' old.';</xmp></code>
         </section>
         <section id="section_number_4" class="main-section">
             <header>
-                section_number_4
+                Java
             </header>
             <article>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.In elementis mé pra quem é amistosis quis leo.Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p>
-                <code>console.log(Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.)</code>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.In elementis mé pra quem é amistosis quis leo.Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p>
-                <code>console.log(Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.)</code>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.In elementis mé pra quem é amistosis quis leo.Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p>
+                <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. Is is a general-purpose programming language intended to let programmers write once, run anywhere (WORA), meaning that complied Java code can run on all platforms that support Java without the need to recompile.</p>
+                <p>ava is used in applications, business, client-side, general-purpose, mobile development, server-side and web development.</p>
+                <p>The language was created with the following primary goals:</p>
+                <ol>
+                    <li>It must be simple, object-oriented, and familiar;</li>
+                    <li>It must be robust and secure;</li>
+                    <li>It must be architecture-neutral and portable;</li>
+                    <li>It must execute with high performance;</li>
+                    <li> must be interpreted, threaded and dynamic.</li>
+                </ol>
+                <p>Some code written in Java can be seen bellow.</p>
+                <code><xmp>public class HelloWorldApp {
+    public static void main(String[] args) {
+        System.out.println("Hello World!"); // Prints the string to the console.
+    }
+}</xmp></code>
+                <code><xmp>// This is an example of a single line comment using two slashes
+
+/*
+    * This is an example of a multiple line comment using the slash and asterisk.
+    * This type of comment can be used to hold a lot of information or deactivate
+    * code, but it is very important to remember to close the comment.
+    */
+
+package fibsandlies;
+
+import java.util.Map;
+import java.util.HashMap;
+
+/**
+    * This is an example of a Javadoc comment; Javadoc can compile documentation
+    * from this text. Javadoc comments must immediately precede the class, method,
+    * or field being documented.
+    * @author Wikipedia Volunteers
+    */
+public class FibCalculator extends Fibonacci implements Calculator {
+    private static Map<Integer, Integer> memoized = new HashMap<>();
+
+    /*
+        * The main method written as follows is used by the JVM as a starting point
+        * for the program.
+        */
+    public static void main(String[] args) {
+        memoized.put(1, 1);
+        memoized.put(2, 1);
+        System.out.println(fibonacci(12)); // Get the 12th Fibonacci number and print to console
+    }
+
+    /**
+        * An example of a method written in Java, wrapped in a class.
+        * Given a non-negative number FIBINDEX, returns
+        * the Nth Fibonacci number, where N equals FIBINDEX.
+        * 
+        * @param fibIndex The index of the Fibonacci number
+        * @return the Fibonacci number
+        */
+    public static int fibonacci(int fibIndex) {
+        if (memoized.containsKey(fibIndex)) {
+            return memoized.get(fibIndex);
+        }
+
+        int answer = fibonacci(fibIndex - 1) + fibonacci(fibIndex - 2);
+        memoized.put(fibIndex, answer);
+        return answer;
+    }
+}</xmp></code>
             </article>
         </section>
         <section id="section_number_5" class="main-section">
@@ -117,11 +178,5 @@ echo 'I am currently ' . myAge(1995) . ' old.';</xmp></code>
 </body>
 
 <!--
-User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
-
-User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
-
-User Story #7: The .main-section elements should contain at least 5 li items total (not each).
-
-On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
+Section number 5 needs to be rewritten
 -->
