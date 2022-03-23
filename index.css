@@ -1,17 +1,36 @@
 /* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* Global elements styling */
+/* Custom properties/variables */
 :root {
-    --textColor: #000;
-    --linkColor: #00F;
-    --backgroundColor: #FFF;
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
 }
 
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* box-sizing and font-sizing */
 *,
 *::before,
 *::after {
+    box-sizing: inherit;
+}
+
+html {
     box-sizing: border-box;
+
+
+/* Set font size for easy rem calculations
+* default font size = 16px, 1rem = 16px, 100% = 16px
+* (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px*/
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body::before{
@@ -43,6 +62,10 @@ h2 {
     font-family: 'Roboto Slab', serif;
 }
 
+ul{
+    list-style: none;
+}
+
 h1,
 h2 {
     margin-top: 0;
@@ -55,7 +78,7 @@ h3 {
 }
 
 a {
-    color: var(--linkColor);
+    color: var(--main-white);
     text-decoration: none;
 }
 
@@ -64,8 +87,27 @@ p {
     font-size: 1.1em;
 }
 
+/* nav */
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-red);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
 /* Global classes styling*/
-#pageWrapper {
+/*#pageWrapper {
     width: 100%;
     margin: 1rem auto 0 auto;
     background-color: rgba(255, 255, 255, 0.4);
@@ -84,10 +126,15 @@ p {
     #pageWrapper {
         max-width: 720px;
     }
-}
+}*/
 
-#header {
-    margin-bottom: 2rem;
+#welcome-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #title {
