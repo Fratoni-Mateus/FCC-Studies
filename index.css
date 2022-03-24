@@ -106,6 +106,12 @@ p {
     margin-right: 2rem;
 }
 
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
 /* Global classes styling*/
 /*#pageWrapper {
     width: 100%;
