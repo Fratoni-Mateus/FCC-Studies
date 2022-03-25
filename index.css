@@ -1,5 +1,10 @@
 /* Importing fonts */
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Dosis', sans-serif;
+* font-family: 'Oswald', sans-serif;
+* font-family: 'Roboto Slab', serif;
+*/
 
 /* Custom properties/variables */
 :root {
@@ -66,59 +71,43 @@ html {
     }
 }
 
+/* Base styles */
 
-body::before{
-    content:'';
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background: var(--backgroundColor);
-    background: linear-gradient(45deg, rgba(43,95,226,1) 5%, rgba(245,246,248,1) 30%, rgba(245,246,248,1) 70%, rgba(209,226,48,1) 95%);
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
 }
 
-body{
-    font-family: 'Roboto Slab', serif;
-    color: var(--textColor)
+h1,
+h2 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    text-align: center;
 }
 
 h1 {
-    font-weight: 500;
-    font-size: 32pt;
-    line-height: 1.2;
+    font-size: 6rem;
 }
 
 h2 {
-    font-weight: 400;
-    font-size: 1.15rem;
-    font-family: 'Roboto Slab', serif;
+    font-size: 4.2rem;
 }
 
 ul{
     list-style: none;
 }
 
-h1,
-h2 {
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-}
-
-h3 {
-    margin-top: 0;
-    line-height: 1;
-}
-
 a {
-    color: var(--main-white);
     text-decoration: none;
+    color: var(--main-white);
 }
 
-p {
-    font-weight: 400;
-    font-size: 1.1em;
+img {
+    display: block;
+    width: 100%;
 }
 
 /* nav */
@@ -140,33 +129,27 @@ p {
     margin-right: 2rem;
 }
 
+@media (max-width: 28.75em) {
+    .nav {
+        justify-content: center;
+    }
+}
+
+.nav-list {
+    margin: 0 1rem;
+}
+
 .nav-list a {
     display: block;
     font-size: 2.2rem;
     padding: 2rem;
 }
 
-/* Global classes styling*/
-/*#pageWrapper {
-    width: 100%;
-    margin: 1rem auto 0 auto;
-    background-color: rgba(255, 255, 255, 0.4);
-    padding: 2.5rem 0.625rem;
-    border-radius: 0.25rem;
-    backdrop-filter: blur(4px);
+.nav-list a:hover {
+    background: var(--main-blue);
 }
 
-@media (min-width: 576px) {
-    #pageWrapper {
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-    #pageWrapper {
-        max-width: 720px;
-    }
-}*/
+/* Welcome section */
 
 #welcome-section {
     height: 100vh;
