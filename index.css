@@ -33,6 +33,40 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Media queries to set variable font size at different screen sizes.
+* The trick is to use the rem unit for size values, margin and padding.
+* Because rem is relative to the document font size
+* When we scale up or down the font size on the document
+* it will affect all properties using rem units for the values.*/
+
+/* Using em unit for breakpoints
+* The calculation is the following
+* screen size divided by browser base font size
+* As an example: a breakpoint at 900px
+* 980px / 16px = 61.25em */
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 75em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
 body::before{
     content:'';
     position: fixed;
@@ -164,3 +198,6 @@ p {
 .linkDescription{
     text-align: justify;
 }
+
+/* Project based on Free Code Camp portfolio project on https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage
+* Page based on the example available on https://codepen.io/freeCodeCamp/full/zNBOYG */
