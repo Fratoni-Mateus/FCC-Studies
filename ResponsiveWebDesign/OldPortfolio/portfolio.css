@@ -1,0 +1,113 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Global elements styling */
+:root {
+    --textColor: #000;
+    --linkColor: #00F;
+    --backgroundColor: #FFF;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body::before{
+    content:'';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--backgroundColor);
+    background: linear-gradient(45deg, rgba(43,95,226,1) 5%, rgba(245,246,248,1) 30%, rgba(245,246,248,1) 70%, rgba(209,226,48,1) 95%);
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    color: var(--textColor)
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 32pt;
+    line-height: 1.2;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.15rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    margin-top: 0;
+    line-height: 1;
+}
+
+a {
+    color: var(--linkColor);
+    text-decoration: none;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+/* Global classes styling*/
+#pageWrapper {
+    width: 100%;
+    margin: 1rem auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+    backdrop-filter: blur(4px);
+}
+
+@media (min-width: 576px) {
+    #pageWrapper {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    #pageWrapper {
+        max-width: 720px;
+    }
+}
+
+#header {
+    margin-bottom: 2rem;
+}
+
+#title {
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
+
+#subtitle {
+    text-align: justify;
+}
+
+.topic {
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+}
+
+.title{
+    line-height: 0.5;
+}
+
+.linkDescription{
+    text-align: justify;
+}

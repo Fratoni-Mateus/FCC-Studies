@@ -171,6 +171,17 @@ img {
 
 /* Projects section */
 
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background-color: var(--main-blue);
+}
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+}
 
 .topic {
     margin-top: 0rem;
