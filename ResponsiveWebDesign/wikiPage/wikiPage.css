@@ -97,7 +97,7 @@ code{
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 1006px) {
     #navbar ul {
         border: 1px solid;
         height: 207px;

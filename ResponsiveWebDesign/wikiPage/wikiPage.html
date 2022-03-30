@@ -117,9 +117,12 @@ echo 'I am currently ' . myAge(1995) . ' old.';</xmp></code>
                 <code><xmp>// This is an example of a single line comment using two slashes
 
 /*
-    * This is an example of a multiple line comment using the slash and asterisk.
-    * This type of comment can be used to hold a lot of information or deactivate
-    * code, but it is very important to remember to close the comment.
+    * This is an example of a multiple line 
+    * comment using the slash and asterisk.
+    * This type of comment can be used to 
+    * hold a lot of information or deactivate
+    * code, but it is very important to 
+    * remember to close the comment.
     */
 
 package fibsandlies;
@@ -128,8 +131,10 @@ import java.util.Map;
 import java.util.HashMap;
 
 /**
-    * This is an example of a Javadoc comment; Javadoc can compile documentation
-    * from this text. Javadoc comments must immediately precede the class, method,
+    * This is an example of a Javadoc comment;
+    * Javadoc can compile documentation
+    * from this text. Javadoc comments must
+    * immediately precede the class, method,
     * or field being documented.
     * @author Wikipedia Volunteers
     */
@@ -137,13 +142,15 @@ public class FibCalculator extends Fibonacci implements Calculator {
     private static Map<Integer, Integer> memoized = new HashMap<>();
 
     /*
-        * The main method written as follows is used by the JVM as a starting point
+        * The main method written as follows 
+        * is used by the JVM as a starting point
         * for the program.
         */
     public static void main(String[] args) {
         memoized.put(1, 1);
         memoized.put(2, 1);
-        System.out.println(fibonacci(12)); // Get the 12th Fibonacci number and print to console
+        // Get the 12th Fibonacci number and print to console
+        System.out.println(fibonacci(12)); 
     }
 
     /**
