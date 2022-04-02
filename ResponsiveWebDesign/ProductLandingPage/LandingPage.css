@@ -584,3 +584,6 @@ footer a {
 .dropdown:hover .dropButton {
     background-color: var(--footerHover);
 }
+
+/* Project based on Free Code Camp product landing page project on https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page */
+/* Page based on the example available on https://codepen.io/freeCodeCamp/full/RKRbwL */
